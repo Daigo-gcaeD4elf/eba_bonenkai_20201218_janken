@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社長とじゃんけん　管理ページ　ログイン画面</title>
+    <link rel="stylesheet" href="../css/stylesheet.css?now=<?=date('YmdHis')?>">
+    <link rel="stylesheet" href="../css/responsive.css?now=<?=date('YmdHis')?>">
+</head>
+<body>
+    <div id="wrapper">
+        <p id="page_title">管理者ログイン画面</p>
+        <form action="" method="POST">
+            <div id="main_area">
+                <p>ユーザーID<input type="text" name="username"></p>
+                <p>パスワード<input type="password" name="pass"></p>
+            </div>
+            <div class="btn_area">
+                <input id="button" type="submit" name="send" value="ログイン">
+                <!-- <p><input type="submit" name="reg" value="新規登録"></p> -->
+            </div>
+        </form>
+    </div>
+</body>
+</html>

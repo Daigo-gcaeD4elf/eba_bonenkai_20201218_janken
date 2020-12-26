@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社長とじゃんけん！！！</title>
+    <link rel="stylesheet" href="../css/stylesheet.css?now=<?=date('YmdHis')?>">
+    <link rel="stylesheet" href="../css/responsive.css?now=<?=date('YmdHis')?>">
+</head>
+<body>
+    <div id="wrapper">
+        <p id="page_title">管理者画面TOP</p>
+        <div id="main_area">
+            <div class="btn_area_kanri">
+                <form action="./admin_game.php" method="POST" name="startGame"><input type="hidden" id="button" name="game_start" value="ゲームスタート"></form>
+                <button class="button" id="startBtn">ゲームスタート</button>
+            </div>
+            <div class="btn_area_kanri">
+                <form action="./config.php" method="POST">
+                    <input type="hidden" name="from_page" value="admin">
+                    <input type="submit" id="button" name="config" value="設定の変更">
+                </form>
+            </div>
+            <div class="btn_area_kanri">
+                <form action="./admin_game_member.php" method="POST">
+                    <input type="hidden" name="from_page" value="admin">
+                    <input type="submit" id="button" name="config" value="メンバー情報">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/admin.js?now=<?=date('YmdHis')?>"></script>
+</body>
+</html>
